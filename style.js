@@ -1,9 +1,9 @@
 //Qs1.Write a JS program to get the first n element of an array.
 
-/*let arr = [3, 5, 6, 43, 5, 3, 52, 44, 55, 77, 88, 12, 343, , 57];
+let arr = [3, 5, 6, 43, 5, 3, 52, 44, 55, 77, 88, 12, 343, , 57];
 let n = prompt("Enter your number");
 console.log(arr.splice(0, n));
-*/
+
 
 //Qs2. Write a JS program to get the last n element of an array.
 
