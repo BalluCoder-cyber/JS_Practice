@@ -7,12 +7,12 @@ console.log(arr.splice(0, n));
 
 //Qs2. Write a JS program to get the last n element of an array.
 
-
+/*
 let arr = [3,4,6,2,1,6,6,8,0,3];
 let pro = prompt("Enter your number");
 let n = arr.length-pro;
 console.log(arr.splice(n));
-
+*/
 
 //Qs3. Write a JS program to check whether a string is blank or not.
 
@@ -52,6 +52,12 @@ if(arr.indexOf(value) != -1){
 
 //Game Of Guess the Movie;
 
-let movie = "Tarzan";
+let movie = "dangal";
 let guess = prompt("Enter movie Name");
+while(guess != movie){
+    console.log("Re-try");   
+    guess = prompt("ReEnter movie Name");
+}
+console.log(`${guess}-is the movie`);
+console.log("Congratulations! YOU WIN..");
 
