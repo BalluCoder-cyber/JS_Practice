@@ -51,7 +51,7 @@ if(arr.indexOf(value) != -1){
 
 
 //Game Of Guess the Movie;
-
+/*
 let movie = "dangal";
 let guess = prompt("Enter movie Name");
 while(guess != movie){
@@ -60,4 +60,4 @@ while(guess != movie){
 }
 console.log(`${guess}-is the movie`);
 console.log("Congratulations! YOU WIN..");
-
+*/
