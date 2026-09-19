@@ -105,6 +105,7 @@ for(let i=0;i<arr.length; i++){
 }
 
 //Question:12
+/*
 let number = 287152;
 let sum = 0;
 let last = number;
@@ -136,3 +137,4 @@ for(let i=0; i<=arr1.length; i++){
     }
 }
 console.log(largest);
+*/
