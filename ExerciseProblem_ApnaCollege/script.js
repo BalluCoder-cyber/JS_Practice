@@ -96,6 +96,7 @@ if(arr2.indexOf(n) == -1){
 */
 
 // Question:11
+/*
 let arr = [1, 2, 3, 4, 5, 6, 2, 3];
 let num = 2;
 for(let i=0;i<arr.length; i++){
@@ -105,7 +106,6 @@ for(let i=0;i<arr.length; i++){
 }
 
 //Question:12
-/*
 let number = 287152;
 let sum = 0;
 let last = number;
@@ -138,3 +138,25 @@ for(let i=0; i<=arr1.length; i++){
 }
 console.log(largest);
 */
+
+// Question:15
+let dice = Math.floor(Math.random()*6+1);
+console.log(dice);
+
+//Queston:16
+let car = {
+    carName : "Bugatti Sheron",
+    model : "Top Model 2030",
+    color : "Mate Black"
+}
+console.log(car);
+
+//Question:17 
+let person = {
+    personName: "Balwant Ahirwar",
+    age: 20,
+    city: "London",
+}
+person.city = "Hydrabad";
+person.country = "India";
+console.log(person);
