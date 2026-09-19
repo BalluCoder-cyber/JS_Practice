@@ -94,3 +94,45 @@ if(arr2.indexOf(n) == -1){
     console.log("Element is in array");
 }
 */
+
+// Question:11
+let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+let num = 2;
+for(let i=0;i<arr.length; i++){
+    if(arr[i] == num){
+       console.log(arr.splice(i,1)) ;
+    }
+}
+
+//Question:12
+let number = 287152;
+let sum = 0;
+let last = number;
+while(last > 0){
+    digit = last%10;
+    sum += digit;
+    last = Math.floor(last/10);
+}
+console.log(sum);
+
+//Question:13
+let fact = 7;
+let multifact = 1;
+if(fact == 0 || fact == 1){
+    console.log(1);
+}else{
+    for(let i=1; i<=fact; i++ ){
+        multifact *= i;
+    }
+    console.log(multifact);
+}
+
+//Question:14
+let arr1 = [1, 2, 3, 4, 5, 6, 2, 3];
+let largest = Number.MIN_SAFE_INTEGER;
+for(let i=0; i<=arr1.length; i++){
+    if(largest < arr1[i]){
+        largest = arr1[i];
+    }
+}
+console.log(largest);
