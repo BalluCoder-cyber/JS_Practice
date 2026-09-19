@@ -1,11 +1,13 @@
 // Question:1
-/* let names = prompt("Enter your name");
+/*
+ let names = prompt("Enter your name");
  let age = prompt("Enter your age");
  alert(`${names} is ${age} year old`)
 */
 
 // Question:2
-/* let quarter =  prompt("Enter your quarter");
+/* 
+let quarter =  prompt("Enter your quarter");
 
 switch(quarter){
     case "1" : console.log("January , February, March");
@@ -140,6 +142,7 @@ console.log(largest);
 */
 
 // Question:15
+/*
 let dice = Math.floor(Math.random()*6+1);
 console.log(dice);
 
@@ -160,3 +163,66 @@ let person = {
 person.city = "Hydrabad";
 person.country = "India";
 console.log(person);
+*/
+
+// Question:18
+/*
+let arr = [2,4,7,5,7,8,4,3];
+let n = 5;
+let arrCopy = [];
+function largestNumber() {
+   for(let i=0; i<arr.length; i++){
+      if(arr[i] > n){
+        arrCopy[i] = arr[i]; 
+      }
+   }
+    return arrCopy;
+}
+console.log(largestNumber());
+
+
+//Question:19
+let str = "abcdabcdefgggh";
+let ansStr = "";
+for(let i=0; i<str.length; i++){
+    if(ansStr.indexOf(str[i]) == -1){
+        ansStr += str[i];
+    }
+}
+ console.log(ansStr);
+
+//Question:20
+let country = ["Australia", "Germany", "United States of America","braxil","india"];
+let longest = "";
+let longestCountry = function (country){
+       for (let i=0; i<country.length; i++) {
+          if(longest.length < country[i].length){
+            longest = country[i];  
+          }
+       }
+       return longest;
+
+}
+console.log(longestCountry(country));
+
+//Question:21
+let str1 ="My name is balwnat ahirwar and i am pursing b-tech from gyan sagar college of engineering..." 
+let vowel = (str1)=>{
+     let count = 0;
+    for(let i=0; i<str1.length; i++){     
+        if(str1[i] == "a" || str1[i] == "e" || str1[i] == "i" || str1[i] == "o" || str1[i] == "u"){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log( vowel(str1));
+
+//Question:22
+let start = 100;
+let random = (start)=>{
+    return Math.floor(Math.random()*start+100);
+}
+console.log(random(start));
+*/
