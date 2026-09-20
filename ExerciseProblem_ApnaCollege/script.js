@@ -20,7 +20,7 @@ switch(quarter){
     break;
     default: console.log("Not a Quarter");
 }
-*/   
+*/
 
 //Queston:3
 /* 
@@ -226,3 +226,48 @@ let random = (start)=>{
 }
 console.log(random(start));
 */
+
+//Question:23
+let arr = [55, 44, 33, 22, 11];
+let arrayAverage = (arr) => {
+    let average = 0;
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(arrayAverage(arr));
+
+//Question:24
+let number = Number(prompt("Enter your number"));
+let isEven = (number) => {
+    if (number % 2 == 0) {
+        return "Number is Even";
+    } else {
+        return "Number is Odd";
+    }
+}
+console.log(isEven(number));
+
+//Question:25
+const object = {
+    message: 'Hello, World!',
+    logMessage() {
+        console.log(this.message);
+    }
+};
+setTimeout(object.logMessage, 1000);
+
+//Question:26
+let length = 4;
+function callback() {
+    console.log(this.length);
+}
+const object1 = {
+    length: 5,
+    method(callback) {
+        callback();
+    },
+};
+object1.method(callback, 1, 2);
