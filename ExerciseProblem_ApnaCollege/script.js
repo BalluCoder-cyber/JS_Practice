@@ -228,6 +228,7 @@ console.log(random(start));
 */
 
 //Question:23
+/*
 let arr = [55, 44, 33, 22, 11];
 let arrayAverage = (arr) => {
     let average = 0;
@@ -271,3 +272,44 @@ const object1 = {
     },
 };
 object1.method(callback, 1, 2);
+*/
+
+//Question:27
+let arr = [2,3,9,8,0,67,5];
+let sq = arr.map((el)=>{
+    return el*el;
+});
+console.log(sq);
+let sum = sq.reduce((add , curr)=>{
+    return add+curr;
+});
+console.log(sum)
+let av = sum/arr.length;
+console.log(av);
+
+//Question:28
+let arr1 = [4,2,5,7,1,9];
+let newArr = arr1.map((el)=>{
+    return el+5;
+});
+console.log(newArr);
+
+//Question:29
+let arr2 = ["rohit","sohit","sonu","lalu"];
+let newarr2 = arr2.map((el)=>{
+    return el.toUpperCase();
+});
+console.log(newarr2);
+
+//Question:30
+let doubleAndReturn = (arr, ...args)=>[
+    ...arr,
+    ...args.map((el)=>{
+        return el*2;
+    })
+];
+console.log(doubleAndReturn([4,2,5],7,7));
+
+//Question:31
+let mergeObjects = (obj1, obj2) =>({...obj1, ...obj2});
+console.log(mergeObjects({a:1,b:2,c:4},{e:6,g:7,i:1}));
