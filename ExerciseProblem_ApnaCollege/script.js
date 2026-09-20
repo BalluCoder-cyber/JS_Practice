@@ -275,6 +275,7 @@ object1.method(callback, 1, 2);
 */
 
 //Question:27
+/*
 let arr = [2,3,9,8,0,67,5];
 let sq = arr.map((el)=>{
     return el*el;
@@ -313,3 +314,4 @@ console.log(doubleAndReturn([4,2,5],7,7));
 //Question:31
 let mergeObjects = (obj1, obj2) =>({...obj1, ...obj2});
 console.log(mergeObjects({a:1,b:2,c:4},{e:6,g:7,i:1}));
+*/
